@@ -25,7 +25,7 @@
  */
 return array(
     // Zend_Validate_Alnum
-    "Invalid type given. String, integer or float expected" => "Chybný typ. Byl očekáván řetězec nebo celé či desetinné číslo",
+    "Invalid type given. String, integer or float expected" => "Chybný typ. Byl očekáván řetězec, celé nebo desetinné číslo",
     "'%value%' contains characters which are non alphabetic and no digits" => "'%value%' obsahuje i jiné znaky než písmena a číslice",
     "'%value%' is an empty string" => "'%value%' je prázdný řetězec",
 
@@ -71,7 +71,7 @@ return array(
     "A record matching '%value%' was found" => "Byl nalezen záznam odpovídající '%value%'",
 
     // Zend_Validate_Digits
-    "Invalid type given. String, integer or float expected" => "Chybný typ. Byl očekáván řetězec nebo celé či desetinné číslo",
+    "Invalid type given. String, integer or float expected" => "Chybný typ. Byl očekáván řetězec, celé nebo desetinné číslo",
     "'%value%' must contain only digits" => "'%value%' musí obsahovat jen číslice",
     "'%value%' is an empty string" => "'%value%' je prázdný řetězec",
 
@@ -87,12 +87,12 @@ return array(
     "'%value%' exceeds the allowed length" => "'%value%' překročil dovolenou délku",
 
     // Zend_Validate_File_Count
-    "Too many files, maximum '%max%' are allowed but '%count%' are given" => "Příliž mnoho souborů. Maximum je '%max%', ale bylo zadáno '%count%'",
-    "Too few files, minimum '%min%' are expected but '%count%' are given" => "Příliž málo souborů. Minimum je '%min%', ale byl zadáno jen '%count%'",
+    "Too many files, maximum '%max%' are allowed but '%count%' are given" => "Příliš mnoho souborů. Maximum je '%max%', ale bylo zadáno '%count%'",
+    "Too few files, minimum '%min%' are expected but '%count%' are given" => "Příliš málo souborů. Minimum je '%min%', ale byl zadáno jen '%count%'",
 
     // Zend_Validate_File_Crc32
     "File '%value%' does not match the given crc32 hashes" => "Soubor '%value%' neodpovídá zadanému crc32 hashi",
-    "A crc32 hash could not be evaluated for the given file" => "Pro zadaný soubor nemoh být vypočítán crc32 hash",
+    "A crc32 hash could not be evaluated for the given file" => "Pro zadaný soubor nemohl být vypočítán crc32 hash",
     "File '%value%' is not readable or does not exist" => "Soubor '%value%' buď není čitelný nebo neexistuje",
 
     // Zend_Validate_File_ExcludeExtension
@@ -169,14 +169,14 @@ return array(
     "File '%value%' was not uploaded" => "Soubor '%value%' nebyl nahrán",
     "No temporary directory was found for file '%value%'" => "Pro soubor '%value%' nebyl nalezen žádný dočasný adresář",
     "File '%value%' can't be written" => "Soubor '%value%' nemůže být zapsán",
-    "A PHP extension returned an error while uploading the file '%value%'" => "Rozšíření PHP vrátilo chybu během nahrávání souboru '%value%'",
+    "A PHP extension returned an error while uploading the file '%value%'" => "PHP rozšíření vrátilo chybu během nahrávání souboru '%value%'",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "Soubor '%value%' byl nedovoleně nahrán. Může se jednat o útok",
     "File '%value%' was not found" => "Soubor '%value%' nebyl nalezen",
     "Unknown error while uploading file '%value%'" => "Během nahrávání souboru '%value%' došlo k chybě",
 
     // Zend_Validate_File_WordCount
-    "Too much words, maximum '%max%' are allowed but '%count%' were counted" => "Příliž mnoho slov. Je jich dovoleno maximálně '%max%', ale bylo zadáno '%count%'",
-    "Too less words, minimum '%min%' are expected but '%count%' were counted" => "Příliž málo slov. Musí jich být alespoň '%min%', ale bylo zadáno jen '%count%'",
+    "Too much words, maximum '%max%' are allowed but '%count%' were counted" => "Příliš mnoho slov. Je jich dovoleno maximálně '%max%', ale bylo zadáno '%count%'",
+    "Too less words, minimum '%min%' are expected but '%count%' were counted" => "Příliš málo slov. Musí jich být alespoň '%min%', ale bylo zadáno jen '%count%'",
     "File '%value%' is not readable or does not exist" => "Soubor '%value%' buď není čitelný nebo neexistuje",
 
     // Zend_Validate_Float
@@ -194,9 +194,9 @@ return array(
     "Invalid type given. String expected" => "Chybný typ. Byl očekáván řetězec",
     "'%value%' appears to be an IP address, but IP addresses are not allowed" => "'%value%' vypadá jako IP adresa, ale ty nejsou dovoleny",
     "'%value%' appears to be a DNS hostname but cannot match TLD against known list" => "'%value%' vypadá jako hostname, ale nemohl být ověřen proti známým TLD",
-    "'%value%' appears to be a DNS hostname but contains a dash in an invalid position" => "'%value%' vypadá jako hostname, ale obsahuje pomlčku na nedovolené pozici",
+    "'%value%' appears to be a DNS hostname but contains a dash in an invalid position" => "'%value%' vypadá jako hostname, ale obsahuje pomlčku na nedovoleném místě",
     "'%value%' appears to be a DNS hostname but cannot match against hostname schema for TLD '%tld%'" => "'%value%' vypadá jako hostname, ale neodpovídá formátu hostname pro '%tld%'",
-    "'%value%' appears to be a DNS hostname but cannot extract TLD part" => "'%value%' vypadá jako hostname, nemohu ale určit TLD",
+    "'%value%' appears to be a DNS hostname but cannot extract TLD part" => "'%value%' sice vypadá jako hostname, ale nemohu určit TLD",
     "'%value%' does not match the expected structure for a DNS hostname" => "'%value%' neodpovídá očekáváné struktuře hostname",
     "'%value%' does not appear to be a valid local network name" => "'%value%' nevypadá jako platné síťové jméno",
     "'%value%' appears to be a local network name but local network names are not allowed" => "'%value%' vypadá jako hostname lokální sítě, ty ale nejsou povoleny",
